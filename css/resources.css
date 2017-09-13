@@ -6,12 +6,12 @@ a {
     text-decoration: none;
 }
 
-section>article>ul>li {
+section:nth-last-child(n+2)>article>ul>li {
     margin-bottom: 0.5rem;
     margin-top: 1rem;
 }
 
-section>article>ul>li>a {
+section:nth-last-child(n+2)>article>ul>li>a {
     font-size: var(--size-priority3);
     font-family: var(--font-priority2);
     color: black;
@@ -20,7 +20,7 @@ section>article>ul>li>a {
     padding-bottom: 1px;
 }
 
-section>article>ul>li>p {
+section:nth-last-child(n+2)>article>ul>li>p {
     margin-top: 0.6rem;
     margin-left: 1rem;
     font-size: var(--size-priority4);
@@ -28,19 +28,19 @@ section>article>ul>li>p {
 }
 
 @media only screen and (min-width: 550px) {
-    section>header>h3 {
+    section:nth-last-child(n+2)>header>h3 {
         text-decoration: underline var(--theme-priority1);
     }
 
-    section>article>ul>li>a {
+    section:nth-last-child(n+2)>article>ul>li>a {
         border-bottom: none;
     }
         
-    section>article>ul>li>a:hover {
+    section:nth-last-child(n+2)>article>ul>li>a:hover {
         color: var(--theme-priority1);
     }
 
-    section>article>ul>li>p {
+    section:nth-last-child(n+2)>article>ul>li>p {
         margin-top: 0.3rem;
         border-left: solid 3px #AFECFF;
         padding-left: 0.15rem;
